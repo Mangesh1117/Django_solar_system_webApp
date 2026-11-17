@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+      <h2>Hello {{name}} !!! Hope you are doing good</h2>
+      <h3>please select your option : </h3>
+      <ul type="None">
+        <li>
+            <img src="{% static 'images/mercury.jpg' %}">
+            <a href="/solar/mercury">☿️ Mercury</a>
+        </li>
+        <li>
+            <img src="{% static 'images/venus.jpg' %}">
+            <a href="/solar/venus">♀️ Venus</a>
+        </li>
+        <li>
+            <img src="{% static 'images/earth.jpg' %}">
+            <a href="/solar/earth">🌍 Earth</a>
+        </li>
+        <li>
+            <img src="{% static 'images/mars.jpg' %}">
+            <a href="/solar/mars">♂️ Mars</a>
+        </li>
+        <li>
+            <img src="{% static 'images/jupiter.jpg' %}">
+            <a href="/solar/jupiter">♃ Jupiter</a>
+        </li>
+        <li>
+            <img src="{% static 'images/saturn.jpg' %}">
+            <a href="/solar/saturn">♄ Saturn</a>
+        </li>
+        <li>
+            <img src="{% static 'images/uranus.jpg' %}">
+            <a href="/solar/uranus">♅ Uranus</a>
+        </li>
+        <li>
+            <img src="{% static 'images/neptune.jpg' %}">
+            <a href="/solar/neptune">♆ Neptune</a>
+        </li>
+      </ul>
+      <h6>session starts at {{time}}</h6>
+</body>
+</html>

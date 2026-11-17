@@ -1,0 +1,89 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #492015, #170b12 55%, #05050c);
+    color: white;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Main heading */
+
+h2 {
+    font-size: 42px;
+    color: #ff7043;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 25px 0;
+    text-shadow: 0 0 10px #ff4500,
+                 0 0 25px #ff4500;
+}
+
+/* Mars image */
+
+img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 20px;
+    box-shadow: 0 0 25px #ff4500,
+                0 0 60px rgba(255, 69, 0, 0.5);
+    transition: 0.5s ease;
+}
+
+img:hover {
+    transform: scale(1.12) rotate(8deg);
+    box-shadow: 0 0 40px #ff7043,
+                0 0 80px #ff4500;
+}
+
+/* Information paragraph */
+
+p {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 112, 67, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    color: #ffe4d6;
+    font-size: 18px;
+    line-height: 1.9;
+    text-align: justify;
+    box-shadow: 0 0 25px rgba(255, 69, 0, 0.2);
+}
+
+/* Hover effect on paragraph */
+
+p:hover {
+    border-color: #ff7043;
+    box-shadow: 0 0 30px rgba(255, 69, 0, 0.4);
+    transition: 0.4s;
+}
+
+/* Responsive design */
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 30px;
+    }
+
+    img {
+        width: 190px;
+        height: 190px;
+    }
+
+    p {
+        font-size: 15px;
+        padding: 20px;
+    }
+}
